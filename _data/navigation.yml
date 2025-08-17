@@ -15,9 +15,9 @@ main:
     url: "#"
     submenu:
       - name: INCOSE MENA (MENACOSE)
-        url: /about:incosemena.html
+        url: /about_menacose.html
       - name: Contact Us
-        url: /about-us.html
+        url: /about.html
   - name: Events
     url: /blog-1.html
   - name: Working Groups
