@@ -1,7 +1,7 @@
 #Please use the main menu items under the "name"
 main:
   - name: Home
-    url: /homepage-1.yml
+    url: /
     # submenu:
     #   - name: Home
     #     url: /index.html

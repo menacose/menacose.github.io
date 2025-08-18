@@ -41,6 +41,10 @@ social:
     icon: "ti-linkedin"
     link: https://www.linkedin.com/company/incose-mena/
 
+  - name: youtube
+    icon: "ti-youtube"
+    link: https://www.youtube.com/@MENACOSE
+    
   # - name: pinterest
   #   icon: "ti-pinterest"
   #   link: "#"
@@ -86,6 +90,7 @@ pagination:
 
   # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
   title: ":title - page :num"
+  #title: "MENACOSE"
 
   # Limit how many pagenated pages to create (default: 0, means all)
   limit: 0
