@@ -18,23 +18,33 @@ main:
         url: /about_menacose.html
       - name: Contact Us
         url: /about.html
+      - name: Newsletter
+        url:
   - name: Events
     url: /blog-1.html
-  - name: Working Groups
+  - name: What We Offer
     url: /
     submenu:
-      - name: About Our Working Groups
+      - name: Working Groups
         url: /services.html
-      - name: Join Working Groups
+      - name: SE Education
         url: /portfolio-1.html
-      - name: Propose a Working Group
+      - name: Certification
         url: /portfolio-2.html
+      - name: Corporate Partnerships
+        url:
+      - name: Publications
+        url:
       # - name: 404
       #   url: /404
+  # - name: SE Education
+  #   url: 
+  # - name: Certification
+  #   url:
   - name: Join Us Now
     url: /joinmena.html
-  - name: FAQs
-    url: /contact.html
+  # - name: FAQs
+  #   url: /contact.html
 
 ########## footer menu ###############
 footer:

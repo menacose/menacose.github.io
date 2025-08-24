@@ -12,17 +12,29 @@ hero_area:
 
 ########################### Service ##############################
 services:
-- title : "Brand Design"
+- title : "Events"
+  icon : "ti-calendar"
+  content : "Regular webinars, virtual meetups, regional events in MENA, global events as part of INCOSE international."
+
+- title : "Working Groups"
+  icon : "ti-target"
+  content : "Offering a platform for proffesionals to actively participaate in shaping the state-of-the-art systems engineering practices."
+
+- title : "Certification"
+  icon : "ti-medall"
+  content : "Gain formal recognition through INCOSE's Systems Engineering Professional (SEP) certification program [ASEP, CSEP, or ESEP] to advance your career."
+
+- title : "Networking"
+  icon : "ti-thought"
+  content : "Tap into INCOSE's regional as well as global network to connect with peers in industry, academia, and public sector."
+
+- title : "Corporate Partnerships"
+  icon : "ti-cup"
+  content : "Make an impact that lasts! Collaborate with industry to bring systems engineering practcies into action in our MENA region."
+
+- title : "SE Education"
   icon : "ti-ruler-pencil"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
-
-- title : "Seo & Marketing"
-  icon : "ti-announcement"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
-
-- title : "Creative Design"
-  icon : "ti-palette"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+  content : "We advocate for the promotion systems engineering by making it part of academic curriculum and encourage students pursuing career in systems engineering."
 
 
 ########################### Testimonial ###########################
@@ -49,22 +61,22 @@ testimonial:
 
 
 ######################## Fun facts ########################
-funfacts:
-  enable : true
-  bg_image : "/assets/images/bg/cta-bg.png"
-  item:
-  - name : "work completed"
-    icon : "ti-briefcase"
-    value : "370"
+# funfacts:
+#   enable : true
+#   bg_image : "/assets/images/bg/cta-bg.png"
+#   item:
+#   - name : "work completed"
+#     icon : "ti-briefcase"
+#     value : "370"
     
-  - name : "new projects"
-    icon : "ti-paint-bucket"
-    value : "450"
+#   - name : "new projects"
+#     icon : "ti-paint-bucket"
+#     value : "450"
     
-  - name : "Happy customers"
-    icon : "ti-heart"
-    value : "5000"
+#   - name : "Happy customers"
+#     icon : "ti-heart"
+#     value : "5000"
     
-  - name : "awards win"
-    icon : "ti-cup"
-    value : "37"
+#   - name : "awards win"
+#     icon : "ti-cup"
+#     value : "37"

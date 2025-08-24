@@ -3,7 +3,7 @@ url: "https://demo.themefisher.com" # the base hostname & protocol for your site
 title: "INCOSE MENA (MENACOSE)"
 email: "mena@incose.net"
 # phone: "+21 123 456 5523"
-address: "Virtual Chaoer of INCOSE."
+address: "INCOSE MNEA (MENACOSE) | The Chapter of INCOSE in the MENA Region."
 author: omarhussein
 description: >- # this means to ignore newlines
   INCOSE MENA (MENACOSE) is a regional chapter of INCOSE.
@@ -19,13 +19,13 @@ cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
 
 ############### Call to Action ###############
-cta:
-  enable: true
-  title: "Shape the Future of [Systems] Engineering in the MENA Region."
-  bg_image: "/assets/images/bg/cta-bg-2.png"
-  button:
-    label: "get a quote"
-    link: "contact"
+# cta:
+#   enable: true
+#   title: "Shape the Future of [Systems] Engineering in the MENA Region."
+#   bg_image: "/assets/images/bg/cta-bg-2.png"
+#   button:
+#     label: "get a quote"
+#     link: "contact"
 
 ################## Social site ###############
 social:
