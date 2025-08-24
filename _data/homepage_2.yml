@@ -141,18 +141,30 @@ clients:
 team:
   enable : true
   item:
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/team-1.jpg"
+  - name : "Maged Elaasar"
+    designation : "President"
+    image : "/assets/images/team/Maged.jpg"
     
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/team-2.jpg"
+  - name : "Bassem Hassan"
+    designation : "Vice President"
+    image : "/assets/images/team/Bassem.jpg"
     
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/team-3.jpg"
+  - name : "Hassan Eldeeb"
+    designation : "Secretary"
+    image : "/assets/images/team/Hassan.jpg"
     
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/team-4.jpg"
+  - name : "Mahmoud Fouda"
+    designation : "Treasury"
+    image : "/assets/images/team/Mahmoud.jpg"
+
+  - name : "Mohamed Adel"
+    designation : "Programs"
+    image : "/assets/images/team/Mohamed.jpg"
+    
+  - name : "Moataz Hassan"
+    designation : "SE Education"
+    image : "/assets/images/team/Moataz.jpg"
+    
+  - name : "Omar Hussein"
+    designation : "Communications & PR"
+    image : "/assets/images/team/Omar.jpg"

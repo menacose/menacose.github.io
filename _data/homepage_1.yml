@@ -37,6 +37,46 @@ services:
   content : "We advocate for the promotion systems engineering by making it part of academic curriculum and encourage students pursuing career in systems engineering."
 
 
+########################### VisionMissionStraategy ##############################
+
+about:
+  enable : true
+  subtitle : "About Us"
+  title : "We are Design & <br>Development Team."
+  video_thumb : "/assets/images/about/about.jpg"
+  video_url : "https://www.youtube.com/watch?v=jrkvirglgaQ"
+  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.
+  
+
+  Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+  "
+  button:
+    enable : true
+    label : "Purchase now"
+    link : "/pricing"
+
+########################### News ##############################
+
+
+########################### Events ##############################
+
+
+###################### Sponsors ######################
+clients:
+  enable : true
+  logos:
+    - "/assets/images/clients/client-1.png"
+    - "/assets/images/clients/client-2.png"
+    - "/assets/images/clients/client-3.png"
+    - "/assets/images/clients/client-4.png"
+    - "/assets/images/clients/client-5.png"
+    - "/assets/images/clients/client-1.png"
+    - "/assets/images/clients/client-2.png"
+    - "/assets/images/clients/client-3.png"
+    - "/assets/images/clients/client-4.png"
+    - "/assets/images/clients/client-5.png"
+
+
 ########################### Testimonial ###########################
 testimonial:
   enable : true
@@ -58,6 +98,46 @@ testimonial:
     designation : "Developer"
     image : "/assets/images/team/test-3.jpg"
     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+
+
+
+########################### Join Us Now ##############################
+
+
+
+########################### Board ##############################
+
+team:
+  enable : true
+  item:
+  - name : "Maged Elaasar"
+    designation : "President"
+    image : "/assets/images/team/Maged.jpg"
+    
+  - name : "Bassem Hassan"
+    designation : "Vice President"
+    image : "/assets/images/team/Bassem.jpg"
+    
+  - name : "Hassan Eldeeb"
+    designation : "Secretary"
+    image : "/assets/images/team/Hassan.jpg"
+    
+  - name : "Mahmoud Fouda"
+    designation : "Treasury"
+    image : "/assets/images/team/Mahmoud.jpg"
+
+  - name : "Mohamed Adel"
+    designation : "Programs"
+    image : "/assets/images/team/Mohamed.jpg"
+    
+  - name : "Moataz Hassan"
+    designation : "SE Education"
+    image : "/assets/images/team/Moataz.jpg"
+    
+  - name : "Omar Hussein"
+    designation : "Communications & PR"
+    image : "/assets/images/team/Omar.jpg"
+
 
 
 ######################## Fun facts ########################
