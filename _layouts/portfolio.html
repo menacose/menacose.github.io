@@ -20,7 +20,7 @@ layout: default_2
 			</div>
 		</div>
 		<div class="row">
-            {% for portfolio in site.portfolios limit:"3" %}
+            {% for portfolio in site.workinggroups limit:"3" %}
 			<div class="col-lg-4">
 				<div class="portfolio-block text-center border-0 ">
 				    <img src="{{portfolio.thumbnail | relative_url}}" class="img-fluid" alt="{{portfolio.title}}"/>

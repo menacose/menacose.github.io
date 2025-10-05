@@ -13,7 +13,7 @@ hero_area:
 ########################### Service ##############################
 services:
 - title : "Events"
-  icon : "ti-calendar"
+  icon : "ti-calendar"  
   content : "Regular webinars, virtual meetups, regional events in MENA, global events as part of INCOSE international."
 
 - title : "Working Groups"
@@ -30,7 +30,7 @@ services:
 
 - title : "Corporate Partnerships"
   icon : "ti-cup"
-  content : "Make an impact that lasts! Collaborate with industry to bring systems engineering practcies into action in our MENA region."
+  content : "Make an impact that lasts! Let's collaborate to bring systems engineering practcies into action in our MENA region."
 
 - title : "SE Education"
   icon : "ti-ruler-pencil"
@@ -38,22 +38,25 @@ services:
 
 
 ########################### VisionMissionStraategy ##############################
-
-about:
+vision_mission:
   enable : true
-  subtitle : "About Us"
-  title : "We are Design & <br>Development Team."
-  video_thumb : "/assets/images/about/about.jpg"
-  video_url : "https://www.youtube.com/watch?v=jrkvirglgaQ"
-  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.
-  
+  item:
+  - title: "Our Vision"
+    desc: "To be the leading force advancing systems engineering excellence across the MENA region, fostering innovation, collaboration, and sustainable development in complex socio-technical systems that shape the future of the region and the world."
+  - title: "Our Mission"
+    desc: "To elevate the practice and impact of systems engineering across the MENA region by building a strong community of professionals, enabling knowledge exchange, promoting best practices, and driving collaboration within and across sectors. Through outreach, education, and strategic partnerships, we aim to address regional challenges and contribute to the advancement of global systems engineering."
 
-  Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-  "
-  button:
-    enable : true
-    label : "Purchase now"
-    link : "/pricing"
+strategy:
+  enable: true
+  items:
+    - title: "Develop World-Class Systems Engineering Capacity in MENA"
+      desc: "Deliver high-quality training programs, workshops, and certification opportunities to strengthen professional competencies. Establish academic partnerships, promote systems engineering curricula, and create mentorship programs to support the next generation of systems engineers."
+    - title: "Foster Knowledge Exchange & Collaboration"
+      desc: "Organize conferences, webinars, forums, and working groups to bring together professionals, academics, and industry stakeholders across the MENA region. Encourage cross-sector collaboration, sharing of best practices, and joint initiatives."
+    - title: "Create Strategic Partnerships & Impact Projects"
+      desc: "Engage with governments, organizations, universities, and NGOs in the region to launch pilot projects, consulting engagements, and research partnerships that address real challenges in complex socio-technical systems."
+    # add as many numbered items as you like
+
 
 ########################### News ##############################
 
@@ -62,42 +65,42 @@ about:
 
 
 ###################### Sponsors ######################
-clients:
-  enable : true
-  logos:
-    - "/assets/images/clients/client-1.png"
-    - "/assets/images/clients/client-2.png"
-    - "/assets/images/clients/client-3.png"
-    - "/assets/images/clients/client-4.png"
-    - "/assets/images/clients/client-5.png"
-    - "/assets/images/clients/client-1.png"
-    - "/assets/images/clients/client-2.png"
-    - "/assets/images/clients/client-3.png"
-    - "/assets/images/clients/client-4.png"
-    - "/assets/images/clients/client-5.png"
+# clients:
+#   enable : true
+#   logos:
+#     - "/assets/images/clients/client-1.png"
+#     - "/assets/images/clients/client-2.png"
+#     - "/assets/images/clients/client-3.png"
+#     - "/assets/images/clients/client-4.png"
+#     - "/assets/images/clients/client-5.png"
+#     - "/assets/images/clients/client-1.png"
+#     - "/assets/images/clients/client-2.png"
+#     - "/assets/images/clients/client-3.png"
+#     - "/assets/images/clients/client-4.png"
+#     - "/assets/images/clients/client-5.png"
 
 
 ########################### Testimonial ###########################
-testimonial:
-  enable : true
-  title : "clients feedback"
-  subtitle : "testimonials"
-  bg_image : "/assets/images/bg/testimonial-bg.png"
-  item:
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-1.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+# testimonial:
+#   enable : true
+#   title : "clients feedback"
+#   subtitle : "testimonials"
+#   bg_image : "/assets/images/bg/testimonial-bg.png"
+#   item:
+#   - name : "Liam Hughes"
+#     designation : "Manager"
+#     image : "/assets/images/team/test-1.jpg"
+#     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
     
-  - name : "Jane Austin"
-    designation : "Designer"
-    image : "/assets/images/team/test-2.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+#   - name : "Jane Austin"
+#     designation : "Designer"
+#     image : "/assets/images/team/test-2.jpg"
+#     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
     
-  - name : "Liolane hussy"
-    designation : "Developer"
-    image : "/assets/images/team/test-3.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+#   - name : "Liolane hussy"
+#     designation : "Developer"
+#     image : "/assets/images/team/test-3.jpg"
+#     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
 
 
 
@@ -112,31 +115,31 @@ team:
   item:
   - name : "Maged Elaasar"
     designation : "President"
-    image : "/assets/images/team/Maged.jpg"
+    image : "/assets/images/team/Maged.png"
     
   - name : "Bassem Hassan"
     designation : "Vice President"
-    image : "/assets/images/team/Bassem.jpg"
+    image : "/assets/images/team/Bassem.png"
     
   - name : "Hassan Eldeeb"
     designation : "Secretary"
-    image : "/assets/images/team/Hassan.jpg"
+    image : "/assets/images/team/Hassan.png"
     
   - name : "Mahmoud Fouda"
     designation : "Treasury"
-    image : "/assets/images/team/Mahmoud.jpg"
+    image : "/assets/images/team/Mahmoud.png"
 
   - name : "Mohamed Adel"
     designation : "Programs"
-    image : "/assets/images/team/Mohamed.jpg"
+    image : "/assets/images/team/Mohamed.png"
     
   - name : "Moataz Hassan"
     designation : "SE Education"
-    image : "/assets/images/team/Moataz.jpg"
+    image : "/assets/images/team/Moataz.png"
     
   - name : "Omar Hussein"
     designation : "Communications & PR"
-    image : "/assets/images/team/Omar.jpg"
+    image : "/assets/images/team/Omar.png"
 
 
 

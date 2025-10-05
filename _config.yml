@@ -12,7 +12,7 @@ logo_icon: "/assets/images/IM_Logo.png"
 # contact form action
 contact_form_action: "#" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
-footer_content: "Fonded in 2025, INCOSE MENA (MENACOSE) aims at democratising the practices of Systems Engineering in the MENA region."
+footer_content: "Founded in 2025, INCOSE MENA (MENACOSE) aims at democratising the practices of Systems Engineering in the MENA region."
 copyright: "INCOSE MENA (MENACOSE). &copy; 2025 All Right Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
@@ -64,7 +64,7 @@ sass:
 
 #collections
 collections:
-  portfolios:
+  workinggroups:
     output: true
 
 ########################################################

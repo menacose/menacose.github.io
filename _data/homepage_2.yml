@@ -143,28 +143,28 @@ team:
   item:
   - name : "Maged Elaasar"
     designation : "President"
-    image : "/assets/images/team/Maged.jpg"
+    image : "/assets/images/team/Maged.png"
     
   - name : "Bassem Hassan"
     designation : "Vice President"
-    image : "/assets/images/team/Bassem.jpg"
+    image : "/assets/images/team/Bassem.png"
     
   - name : "Hassan Eldeeb"
     designation : "Secretary"
-    image : "/assets/images/team/Hassan.jpg"
+    image : "/assets/images/team/Hassan.png"
     
   - name : "Mahmoud Fouda"
     designation : "Treasury"
-    image : "/assets/images/team/Mahmoud.jpg"
+    image : "/assets/images/team/Mahmoud.png"
 
   - name : "Mohamed Adel"
     designation : "Programs"
-    image : "/assets/images/team/Mohamed.jpg"
+    image : "/assets/images/team/Mohamed.png"
     
   - name : "Moataz Hassan"
     designation : "SE Education"
-    image : "/assets/images/team/Moataz.jpg"
+    image : "/assets/images/team/Moataz.png"
     
   - name : "Omar Hussein"
     designation : "Communications & PR"
-    image : "/assets/images/team/Omar.jpg"
+    image : "/assets/images/team/Omar.png"

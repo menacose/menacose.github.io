@@ -1,4 +1,4 @@
-{% for portfolio in site.portfolios %}
+{% for portfolio in site.workinggroups %}
 <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for category in portfolio.categories %} &quot;{{ category | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
   <div class="position-relative inner-box">
     <div class="image position-relative ">

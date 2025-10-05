@@ -16,7 +16,7 @@
         <label class="btn border-0 active">
           <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
         </label>
-        {% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
+        {% assign categories = site.workinggroups| map: 'categories' | join: ',' | split: ',' | uniq %}
         {% for category in categories %}
         <label class="btn border-0">
           <input type="radio" name="shuffle-filter"

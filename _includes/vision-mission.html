@@ -1,0 +1,37 @@
+{% assign vm = site.data.homepage_1.vision_mission %}
+{% if vm and vm.enable %}
+<section class="section vision-mission">
+    <div>
+        <p>VISION INCLUDE WORKS</p>
+    </div>
+  <div class="container">
+    {% assign per_row = 2 %}
+    {% for item in vm.item %}
+      {% comment %}
+        Open a row when the index modulo per_row = 0
+      {% endcomment %}
+      {% if forloop.index0 | modulo: per_row == 0 %}
+        <div class="row mb-4">
+      {% endif %}
+
+      <div class="col-md-6">
+        <div class="vm-item">
+          <h4 class="my-3">{{ item.title }}</h4>
+          <p>{{ item.desc | markdownify }}</p>
+        </div>
+      </div>
+
+      {% comment %}
+        Close the row when either:
+         - (index modulo per_row) equals per_row-1
+         - OR it’s the last item
+      {% endcomment %}
+      {% capture modval %}{{ forloop.index0 | modulo: per_row }}{% endcapture %}
+      {% capture lastIndexModuloTarget %}{{ per_row | minus: 1 }}{% endcapture %}
+      {% if modval == lastIndexModuloTarget or forloop.last %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

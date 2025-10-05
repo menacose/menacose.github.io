@@ -1,0 +1,18 @@
+{% assign sv = site.data.homepage_1.strategy %}
+{% if sv and sv.enable %}
+<section class="section strategy">
+  <div class="container">
+    <h3 class="section-title">Strategy</h3>
+    <ol class="strategy-list">
+      {% for item in sv.items %}
+        <li class="strategy-item">
+          <h3>{{ item.title }}</h3>
+          <div class="strategy-desc">
+            {{ item.desc | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}
