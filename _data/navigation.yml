@@ -20,6 +20,8 @@ main:
         url: /about-me.html
   - name: Blog
     url: /blog-1.html
+  - name: Docs
+    url: /docs.html
   - name: Pages
     url: /
     submenu:
