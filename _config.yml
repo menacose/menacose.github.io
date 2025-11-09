@@ -50,8 +50,6 @@ permalink: "/:title"
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
-  - jekyll-archives
 
 # Scss Directory
 sass:
@@ -123,12 +121,6 @@ pagination:
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
-
-jekyll-archives:
-  enabled: all
-  layout: category
-  permalinks:
-    category: "/category/:name/"
 
 feed:
   collections:

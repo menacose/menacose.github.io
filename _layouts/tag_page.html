@@ -1,6 +1,39 @@
 ---
 layout: default
-title: Tag Page
 ---
 
-<h2>Tag Page</h2>
+{% include page_header.html %}
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      {% assign tagged_posts = site.posts | where_exp:"p","p.tags contains page.tag" %}
+      {% if tagged_posts and tagged_posts.size > 0 %}
+        {% for post in tagged_posts %}
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item mb-5">
+              <div class="blog-img position-relative">
+                <a href="{{ post.url | relative_url }}">
+                  {% if post.image %}
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="img-fluid w-100" />
+                  {% endif %}
+                </a>
+              </div>
+              <h4 class="mt-4 mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+              <div class="post-meta text-uppercase mb-3">
+                {% if post.author %}<a href="#" class="text-color">by {{ post.author }} </a>{% endif %}
+                <span class="text-color">{{ post.date | date: "%d %B %Y" }}</span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="col-12 text-center">
+          <p>No posts found with tag <strong>{{ page.tag }}</strong>.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% include call_to_action.html %}

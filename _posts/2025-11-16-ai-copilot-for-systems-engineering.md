@@ -4,7 +4,7 @@ title: "AI Copilot for Systems Engineering"
 date: 2020-11-16
 tags: events
 categories: [events]
-post_image: "/assets/images/blog/se-ai-copilot.png"
+image: "/assets/images/blog/se-ai-copilot.png"
 author: "Kareem Elaasar"
 featured: true
 ---
