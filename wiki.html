@@ -1,0 +1,39 @@
+---
+layout: default
+header_image: "/assets/images/bg/blog-bg.jpg"
+title: "Our Wiki"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad
+minim veniam quis."
+---
+
+{% include page_header.html %}
+
+<section id="wiki-iframe" style="margin:0 !important; padding:0 !important; border:0;">
+	<div style="margin:0 !important; padding:0 !important; border:0; width:100vw; max-width:100vw;">
+		<div style="position:relative; width:100vw; max-width:100vw; height:0; padding-bottom:56.25%; margin:0 !important;">
+			<iframe
+				id="wiki-frame"
+				src="https://www.menacose.org/wiki/"
+				title="Wiki"
+				style="position:absolute; top:0; left:0; width:100vw; max-width:100vw; height:100%; border:0; margin:0 !important; padding:0 !important;"
+				loading="lazy"
+			></iframe>
+		</div>
+		<noscript>
+			<div style="padding:2rem; text-align:center;">
+				JavaScript is disabled. Open the Wiki in a new tab:
+				<a href="https://www.menacose.org/wiki/">Open Wiki</a>
+			</div>
+		</noscript>
+	</div>
+</section>
+
+<script>
+  // Load specific wiki page from URL hash
+  const pageUrl = window.location.hash.substring(1); // Remove the #
+  if (pageUrl) {
+    document.getElementById('wiki-frame').src = decodeURIComponent(pageUrl);
+  }
+</script>
+
+{% include call_to_action.html %}

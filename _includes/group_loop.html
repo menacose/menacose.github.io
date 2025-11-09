@@ -1,0 +1,17 @@
+{% for group in site.groups %}
+<div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for category in group.categories %} &quot;{{ category | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
+  <div class="position-relative inner-box">
+    <div class="image position-relative ">
+      <img src="{{group.thumbnail | relative_url }}" alt="portfolio-image" class="img-fluid w-100 d-block" />
+      <div class="overlay-box">
+        <div class="overlay-inner">
+          <a class="overlay-content text-center" href="{{group.url | relative_url }}">
+            <h5 class="mb-0 text-white">{{group.title}}</h5>
+            <p>{% for category in group.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

@@ -1,0 +1,62 @@
+---
+layout: default_2
+---
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	<div class="blog-single mb-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 mx-auto">
+				<h3 class="mt-4 mb-2">{{page.title}}</h3>
+				{% if page.post_image %}
+				<div class="blog-img position-relative mt-5 mb-5">
+					<img src="{{page.post_image | relative_url}}" alt="{{post.title}}" class="img-fluid w-100"/>
+				</div>
+				{% endif %}
+				<div class="post-content">
+					{{page.content}}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="position-relative section-sm bg-extra">
+	<img src="{{site.cta.bg_image | relative_url }}" class="overlay-shape">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-9 mb-5 mb-lg-0">
+				<h3 class="text-white mb-0">Interested in Starting a Working Group?</h3>
+			</div>
+			<div class="col-lg-3">
+				<a href="/contact" class="btn btn-primary">Contact Us</a>	
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section related-project">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="mb-5">Related Working Groups</h3>
+			</div>
+		</div>
+		<div class="row">
+            {% for group in site.groups limit:"3" %}
+			<div class="col-lg-4">
+				<div class="portfolio-block text-center border-0 ">
+				    <img src="{{group.thumbnail | relative_url}}" class="img-fluid" alt="{{group.title}}"/>
+				    <a class="card-img-overlay" href="{{group.url}}">
+				      <h5 class="card-title text-white mb-0">{{group.title}}</h5>
+				      <p class="card-text text-white text-uppercase text-sm">{{group.category}}</p>
+				    </a>
+				</div>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
+</section>
+

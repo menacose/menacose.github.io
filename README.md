@@ -1,6 +1,6 @@
 # Dizer Jekyll
 
-Dizer Jekyll Creative Portfolio Template ported from [Dizer HTML Template](https://themefisher.com/products/dizer/)
+Dizer Jekyll Creative Template ported from [Dizer HTML Template](https://themefisher.com/products/dizer/)
 
 ![dizer-jekyll](https://demo.themefisher.com/thumbnails/dizer.png)
 
@@ -21,7 +21,6 @@ Things you can customize in `_data/settings.yml` (no HTML/CSS):
 - Hero Section
 - About Section
 - Team Section
-- Skills Section
 - Experience Section
 - Education Section
 - Services Section

@@ -37,3 +37,6 @@ VERSION:	1.0
 @import 'templates/blog-single.scss';
 
 @import 'templates/footer.scss';
+
+// Keep the very last import(s) for overrides so they can win the cascade
+@import 'overrides.scss';

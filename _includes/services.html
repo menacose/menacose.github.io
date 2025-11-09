@@ -1,21 +1,18 @@
 <!-- Service Start -->
-{% assign service = site.data.homepage_2.services %}
-{% if service.enable %}
-<section class="section-sm service bg-secondary">
-	<img src="{{ service.bg_image | relative_url }}" alt="" class="overlay-shape">
+<section class="service">
 	<div class="container">
 		<div class="row justify-content-center">
-			{% for item in service.item %}
+			{% for service in site.data.homepage.services.item %}
 			<div class="col-lg-4 col-md-6">
-				<div class="service-item mb-4 mb-lg-0">
-					<i class="{{item.icon}} text-color"></i>
-					<h4 class="my-4 text-white">{{item.name }}</h4>
-					{{ item.content | markdownify }}
+				<div class="service-item mb-4 mb-lg-0 text-center px-4">
+					<i class="{{ service.icon }} text-color icon-md"></i>
+					<h4 class="my-4 text-white">{{ service.title }}</h4>
+					<p>{{ service.content }}</p>
 				</div>
 			</div>
 			{% endfor %}
+			</div>
 		</div>
 	</div>
 </section>
-{% endif %}
 <!-- Service End -->

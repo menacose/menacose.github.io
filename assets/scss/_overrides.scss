@@ -1,0 +1,11 @@
+// Site-specific overrides loaded last
+// Purpose: keep quick fixes and small global tweaks here so they compile into the main CSS
+
+// Harmonize text color between paragraphs and list items inside post content
+.post-content {
+  p,
+  ul li,
+  ol li {
+    color: #212529 !important;
+  }
+}

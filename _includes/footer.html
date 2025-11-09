@@ -24,20 +24,8 @@
 
 					<ul class="list-unstyled lh-38">
 						{% for menu in site.data.navigation.footer %}
-						<li><a href="{{menu.link | relative_url }}">{{menu.name}}</a></li>
+						<li><a href="{{menu.url | relative_url }}">{{menu.name}}</a></li>
 						{% endfor %}
-					</ul>
-				</div>
-			</div>		
-			<div class="col-lg-2 col-md-6">
-				<div class="footer-widget  mb-5 mb-lg-0">
-					<h4 class="text-white mb-3">Services</h4>
-					<ul class="list-unstyled lh-38">
-						<li><a href="#">Brand Design</a></li>
-						<li><a href="#">seo & marketing</a></li>
-						<li><a href="#">creative design</a></li>
-						<li><a href="#">photography</a></li>
-						<li><a href="#">print design</a></li>
 					</ul>
 				</div>
 			</div>		

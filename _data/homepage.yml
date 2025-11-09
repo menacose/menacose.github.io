@@ -1,0 +1,181 @@
+
+################## Hero Area #######################
+hero_area:
+  slides:
+    - title : "Design Studio"
+      image : "/assets/images/bg/banner-2.png"
+      content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.<br>aliqua enim ad minim veniam quis."
+      button:
+        enable : true
+        label : "Contact Us"
+        link : "/contact"
+    - title : "Creative Agency"
+      image : "/assets/images/bg/banner-2.png"
+      content : "We create beautiful and functional designs for your business."
+      button:
+        enable : true
+        label : "Learn More"
+        link : "/about"
+    - title : "Brand Solutions"
+      image : "/assets/images/bg/banner-2.png"
+      content : "Grow your brand with our expert team and innovative strategies."
+      button:
+        enable : true
+        label : "Get Started"
+        link : "/services"
+
+###################### Services #####################
+services:
+  enable : true
+  bg_image : "/assets/images/bg/feature-bg.png"
+  item:
+  - title : "Brand Design"
+    icon : "ti-ruler-pencil"
+    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+    
+  - title : "Seo & Marketing"
+    icon : "ti-announcement"
+    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+    
+  - title : "Creative Design"
+    icon : "ti-palette"
+    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+################## About ###########################
+about:
+  enable : true
+  subtitle : "About Us"
+  title : "We are Design & <br>Development Team."
+  video_thumb : "/assets/images/about/about.jpg"
+  video_url : "https://www.youtube.com/watch?v=jrkvirglgaQ"
+  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.
+  
+
+  Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+  "
+  button:
+    enable : true
+    label : "Purchase now"
+    link : "/pricing"
+
+
+###################### Statistics #########################
+statistics:
+  enable : true
+  bg_image : "/assets/images/bg/cta-bg.png"
+  item:
+  - name : "work completed"
+    icon : "ti-briefcase"
+    value : "370"
+    
+  - name : "new projects"
+    icon : "ti-paint-bucket"
+    value : "450"
+    
+  - name : "Happy customers"
+    icon : "ti-heart"
+    value : "5000"
+    
+  - name : "awards win"
+    icon : "ti-cup"
+    value : "37"
+
+######################### Testimonail ####################
+testimonial:
+  enable : true
+  subtitle : "testimonials"
+  title : "Our Members Say"
+  item:
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-2.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-3.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-2.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-3.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+
+
+###################### Clients ######################
+clients:
+  enable : true
+  logos:
+    - "/assets/images/clients/client-1.png"
+    - "/assets/images/clients/client-2.png"
+    - "/assets/images/clients/client-3.png"
+    - "/assets/images/clients/client-4.png"
+    - "/assets/images/clients/client-5.png"
+    - "/assets/images/clients/client-1.png"
+    - "/assets/images/clients/client-2.png"
+    - "/assets/images/clients/client-3.png"
+    - "/assets/images/clients/client-4.png"
+    - "/assets/images/clients/client-5.png"
+    
+
+###################### Team ######################
+team:
+  enable : true
+  item:
+  - name : "Maged Elaasar"
+    designation : "President"
+    image : "/assets/images/team/team-1.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+    
+  - name : "Bassem Hassan"
+    designation : "Vice President"
+    image : "/assets/images/team/team-2.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+    
+  - name : "Hassan Mohamed"
+    designation : "Secretary"
+    image : "/assets/images/team/team-3.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+    
+  - name : "Omar Amer"
+    designation : "Communication"
+    image : "/assets/images/team/team-4.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+  
+  - name : "Mohamed Adel"
+    designation : "Programs"
+    image : "/assets/images/team/team-1.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+    
+  - name : "Moataz Hassan"
+    designation : "Education"
+    image : "/assets/images/team/team-2.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+    
+  - name : "Mahmoud Fouda"
+    designation : "Finance"
+    image : "/assets/images/team/team-3.jpg"
+    link: "https://www.linkedin.com/in/magedelaasar/"
+
+################## Events ###########################
+events:
+  - title : "AI CoPIlot for Systems Engineering"
+    date : "2025-11-16"
+    description : "Join us for our annual general meeting to discuss the year's achievements and future plans."
+    link : "/ai-copilot-for-systems-engineering.html"
+

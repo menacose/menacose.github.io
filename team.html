@@ -1,0 +1,43 @@
+---
+layout: default
+header_image: "/assets/images/bg/about-bg.jpg"
+title: "Leadership Team"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad
+minim veniam quis."
+---
+
+{% include page_header.html %}
+
+<!-- Team Start -->
+<section class="section team-2">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<span class="h5 text-color text-uppercase">
+					Our Team
+				</span>
+				<h3 class="mb-5 mt-2">Meet Our Leadership Team</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			{% assign team = site.data.homepage.team %}
+			{% for item in team.item %}
+			<div class="col-md-3 col-sm-6 mb-4">
+				<div class="team-item position-relative">
+					<img src="{{item.image | relative_url }}" alt="" class="img-fluid w-100">
+					<div class="team-overlay-content px-4 py-3">
+						<h5 class="mb-0 text-white"><a href="{{item.link}}" class="text-white" style="text-decoration: underline; color: inherit !important;">{{item.name}}</a></h5>
+						<p>{{item.designation}}</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- Team End -->
+
+<!-- Call To action Start -->
+{% include call_to_action.html %}
+<!-- Call to action End -->

@@ -1,57 +1,61 @@
 #Please use the main menu items under the "name"
 main:
   - name: Home
-    url: /
-    submenu:
-      - name: Home
-        url: /index.html
-      - name: Home 2
-        url: /index-2.html
-      - name: Home 3
-        url: /index-3.html
-      - name: Home 4
-        url: /index-4.html
+    url: /index
   - name: About
-    url: "#"
+    url: "/"
     submenu:
-      - name: About
-        url: /about.html
-      - name: About Me
-        url: /about-me.html
-  - name: Blog
-    url: /blog-1.html
-  - name: Docs
-    url: /docs.html
-  - name: Pages
+      - name: INCOSE MENA
+        url: /about
+      - name: Leadership Team
+        url: /team
+      - name: Sub Chapters
+        url: /subchapters
+      - name: Newsletters
+        url: /tag/newsletters
+      - name: Contact Us
+        url: /contact
+  - name: Events
     url: /
     submenu:
-      - name: Services
-        url: /services.html
-      - name: Portfolio One
-        url: /portfolio-1.html
-      - name: Portfolio Two
-        url: /portfolio-2.html
-      - name: 404
-        url: /404
-  - name: Contact
-    url: /contact.html
+      - name: Browse
+        url: /tag/events
+      - name: Calendar
+        url: /events/calendar
+      - name: Expert Talks
+        url: /events/expert-talks
+      - name: Qahwa Gatherings
+        url: /events/qahwa-gatherings
+  - name: Services
+    url: /
+    submenu:
+      - name: Certification
+        url: /services/certification
+      - name: Networking
+        url: /services/networking
+      - name: Publications
+        url: /services/publications
+      - name: Working Groups
+        url: /services/groups
+  - name: Wiki
+    url: /wiki
+  - name: Join Us
+    url: /join
 
 ########## footer menu ###############
 footer:
-  - name: Services
-    url: /services.html
-  - name: Portfolio One
-    url: /portfolio-1.html
-  - name: Portfolio Two
-    url: /portfolio-2.html
-  - name: Single Portfolio
-    url: /portfolio-single.html
-  - name: Contact
-    url: /contact.html
+  - name: Events
+    url: /tag/events
+  - name: Working Groups
+    url: /services/working-groups
+  - name: Contact Us
+    url: /contact
+  - name: Join Us
+    url: /join
 
 ############## Bottom menu ###############
 bottom:
   - name: Terms of Service
-    link: "#"
+    link: "/terms-of-service"
   - name: Privacy Policy
-    link: "#"
+    link: "/privacy-policy"

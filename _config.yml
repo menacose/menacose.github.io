@@ -8,12 +8,12 @@ author: themefisher
 description: >- # this means to ignore newlines
   Dizer - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
 logo: "/assets/images/logo.png"
-logo_icon: "/assets/images/logo-b.png"
+logo_icon: "/assets/images/logo.png"
 # contact form action
 contact_form_action: "#" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 footer_content: "Lorem ipsum dolor amet consectetur adipielit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam."
-copyright: "dizer. &copy; 2020 All Right Reserved"
+copyright: "MENACOSE &copy; 2025 All Right Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
@@ -21,11 +21,11 @@ google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9
 ############### Call to Action ###############
 cta:
   enable: true
-  title: "dizer give the smart solution for your business"
+  title: "Interested in Supporting Our Mission?"
   bg_image: "/assets/images/bg/cta-bg-2.png"
   button:
-    label: "get a quote"
-    link: "contact"
+    label: "Join Us"
+    link: "join"
 
 ################## Social site ###############
 social:
@@ -60,7 +60,7 @@ sass:
 
 #collections
 collections:
-  portfolios:
+  groups:
     output: true
 
 ########################################################

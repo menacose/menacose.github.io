@@ -1,7 +1,15 @@
+// Ensure each slide is position: relative and fills the banner
+.banner .carousel-item {
+  position: relative;
+  min-height: 750px;
+  height: 750px;
+}
 .banner {
-  background: url("../images/banner/banner.jpg") center center no-repeat;
+  background: url("../images/banner/mena.png") center center no-repeat;
   background-size: cover;
   overflow: hidden;
+  min-height: 750px;
+  height: 750px;
 
   .banner-content {
     padding: 250px 0px 220px 0px;
@@ -18,15 +26,17 @@
 
   .banner-img {
     position: absolute;
-    content: "";
-    bottom: 0px;
-    right: 17%;
-    @media(max-width:1400px){
-      right: 10%;
-    }
-
-    @include desktop-lg {
-      right: -10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   }
 }
