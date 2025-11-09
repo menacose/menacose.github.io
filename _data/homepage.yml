@@ -64,26 +64,17 @@ statistics:
   enable : true
   bg_image : "/assets/images/bg/cta-bg.png"
   item:
-  - name : "work completed"
+  - name : "members"
     icon : "ti-briefcase"
-    value : "370"
-    
-  - name : "new projects"
+    value : "100"
+  - name : "working groups"
     icon : "ti-paint-bucket"
-    value : "450"
-    
-  - name : "Happy customers"
-    icon : "ti-heart"
-    value : "5000"
-    
-  - name : "awards win"
-    icon : "ti-cup"
-    value : "37"
+    value : "2"
 
 ######################### Testimonail ####################
 testimonial:
   enable : true
-  subtitle : "testimonials"
+  subtitle : "quotes"
   title : "Our Members Say"
   item:
   - name : "Liam Hughes"
