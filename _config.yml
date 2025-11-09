@@ -1,22 +1,22 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
-title: "Dizer -  Multipurpose Business & Corporate Jekyll Template"
-email: "themefisher@gmail.com"
-phone: "+21 123 456 5523"
-address: "9567 Turner Trace Apt. 466 North Willie, BC C3G8A4"
-author: themefisher
+url: "https://www.menacose.org/" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
+title: "MENACOSE -  MENA Council of Systems Engineering"
+email: "mena@incose.net"
+phone: "+1 858.541.1725"
+address: "7670 Opportunity Rd, Suite 220  San Diego, CA 92111 USA"
+author: maelaasar
 description: >- # this means to ignore newlines
-  Dizer - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+  MENACOSE - MENA Council of Systems Engineering
 logo: "/assets/images/logo.png"
 logo_icon: "/assets/images/logo.png"
 # contact form action
 contact_form_action: "#" # works with https://fomrspree.io
-mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
-footer_content: "Lorem ipsum dolor amet consectetur adipielit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam."
+mailchimp_list: ""
+footer_content: ""
 copyright: "MENACOSE &copy; 2025 All Right Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
-google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
+google_map_api: ""
 
 ############### Call to Action ###############
 cta:
