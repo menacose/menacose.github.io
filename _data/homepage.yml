@@ -2,7 +2,7 @@
 ################## Hero Area #######################
 hero_area:
   slides:
-    - title : "Design Studio"
+    - title : "INCOSE MENA [MENACOSE]"
       image : "/assets/images/bg/banner-2.png"
       content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.<br>aliqua enim ad minim veniam quis."
       button:
@@ -130,37 +130,37 @@ team:
   item:
   - name : "Maged Elaasar"
     designation : "President"
-    image : "/assets/images/team/team-1.jpg"
+    image : "/assets/images/team/Maged.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
     
   - name : "Bassem Hassan"
     designation : "Vice President"
-    image : "/assets/images/team/team-2.jpg"
+    image : "/assets/images/team/Bassem.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
     
   - name : "Hassan Mohamed"
     designation : "Secretary"
-    image : "/assets/images/team/team-3.jpg"
+    image : "/assets/images/team/Hassan.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
     
-  - name : "Omar Amer"
-    designation : "Communication"
-    image : "/assets/images/team/team-4.jpg"
+  - name : "Omar Hussein"
+    designation : "Communications & PR"
+    image : "/assets/images/team/Omar.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
   
   - name : "Mohamed Adel"
     designation : "Programs"
-    image : "/assets/images/team/team-1.jpg"
+    image : "/assets/images/team/Mohamed.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
     
   - name : "Moataz Hassan"
-    designation : "Education"
-    image : "/assets/images/team/team-2.jpg"
+    designation : "SE Education"
+    image : "/assets/images/team/Moataz.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
     
   - name : "Mahmoud Fouda"
     designation : "Finance"
-    image : "/assets/images/team/team-3.jpg"
+    image : "/assets/images/team/Mahmoud.png"
     link: "https://www.linkedin.com/in/magedelaasar/"
 
 ################## Events ###########################
