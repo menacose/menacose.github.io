@@ -2,44 +2,55 @@
 ################## Hero Area #######################
 hero_area:
   slides:
-    - title : "INCOSE MENA [MENACOSE]"
+    - title : "Join INCOSE MENA [MENACOSE]"
       image : "/assets/images/bg/banner-2.png"
-      content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.<br>aliqua enim ad minim veniam quis."
+      content : "Shape the Future of [Systems] Engineering in the MENA Region."
       button:
         enable : true
-        label : "Contact Us"
-        link : "/contact"
-    - title : "Creative Agency"
+        label : "Join Us Now!"
+        link : "/join-us"
+    - title : "Call for Corporate Partnerships"
       image : "/assets/images/bg/banner-2.png"
-      content : "We create beautiful and functional designs for your business."
+      content : "Make an impact that lasts! Let's collaborate to bring systems engineering practcies into action in our MENA region."
       button:
         enable : true
-        label : "Learn More"
+        label : "Be a Partner Now!"
         link : "/about"
-    - title : "Brand Solutions"
+    - title : "Boost Your Career with SEP Certification"
       image : "/assets/images/bg/banner-2.png"
-      content : "Grow your brand with our expert team and innovative strategies."
+      content : "Gain formal recognition through INCOSE's Systems Engineering Professional (SEP) certification program [ASEP, CSEP, or ESEP] to advance your career."
       button:
         enable : true
-        label : "Get Started"
+        label : "Get Certified Now!"
         link : "/services"
 
 ###################### Services #####################
 services:
-  enable : true
-  bg_image : "/assets/images/bg/feature-bg.png"
-  item:
-  - title : "Brand Design"
-    icon : "ti-ruler-pencil"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
-    
-  - title : "Seo & Marketing"
-    icon : "ti-announcement"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
-    
-  - title : "Creative Design"
-    icon : "ti-palette"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+- title : "Events"
+  icon : "ti-calendar"  
+  content : "Regular webinars, virtual meetups, regional events in MENA, global events as part of INCOSE international."
+
+- title : "Working Groups"
+  icon : "ti-target"
+  content : "Offering a platform for proffesionals to actively participaate in shaping the state-of-the-art systems engineering practices."
+
+- title : "Certification"
+  icon : "ti-medall"
+  content : "Gain formal recognition through INCOSE's Systems Engineering Professional (SEP) certification program [ASEP, CSEP, or ESEP] to advance your career."
+
+- title : "Networking"
+  icon : "ti-thought"
+  content : "Tap into INCOSE's regional as well as global network to connect with peers in industry, academia, and public sector."
+
+- title : "Corporate Partnerships"
+  icon : "ti-cup"
+  content : "Make an impact that lasts! Let's collaborate to bring systems engineering practcies into action in our MENA region."
+
+- title : "SE Education"
+  icon : "ti-ruler-pencil"
+  content : "We advocate for the promotion systems engineering by making it part of academic curriculum and encourage students pursuing career in systems engineering."
+
+
 
 ################## About ###########################
 about:
@@ -67,61 +78,25 @@ statistics:
   - name : "members"
     icon : "ti-briefcase"
     value : "100"
+  - name : "events"
+    icon : "ti-calendar"
+    value : "10+"
   - name : "working groups"
-    icon : "ti-paint-bucket"
+    icon : "ti-target"
     value : "2"
+  - name : "MENA countries represented"
+    icon : "ti-unlock"
+    value : "7+"  
+  - name : "certified professionals"
+    icon : "ti-medall"
+    value : "50+"
+
 
 ######################### Testimonail ####################
-testimonial:
-  enable : true
-  subtitle : "quotes"
-  title : "Our Members Say"
-  item:
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-1.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
-    
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-2.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
-    
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-3.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
-    
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-1.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
-    
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-2.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
-    
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-3.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
 
 
 ###################### Clients ######################
-clients:
-  enable : true
-  logos:
-    - "/assets/images/clients/client-1.png"
-    - "/assets/images/clients/client-2.png"
-    - "/assets/images/clients/client-3.png"
-    - "/assets/images/clients/client-4.png"
-    - "/assets/images/clients/client-5.png"
-    - "/assets/images/clients/client-1.png"
-    - "/assets/images/clients/client-2.png"
-    - "/assets/images/clients/client-3.png"
-    - "/assets/images/clients/client-4.png"
-    - "/assets/images/clients/client-5.png"
+
     
 
 ###################### Team ######################
@@ -136,32 +111,32 @@ team:
   - name : "Bassem Hassan"
     designation : "Vice President"
     image : "/assets/images/team/Bassem.png"
-    link: "https://www.linkedin.com/in/magedelaasar/"
+    link: "https://www.linkedin.com/in/drbassemhassan?originalSubdomain=de"
     
   - name : "Hassan Mohamed"
     designation : "Secretary"
     image : "/assets/images/team/Hassan.png"
-    link: "https://www.linkedin.com/in/magedelaasar/"
-    
-  - name : "Omar Hussein"
-    designation : "Communications & PR"
-    image : "/assets/images/team/Omar.png"
-    link: "https://www.linkedin.com/in/magedelaasar/"
+    link: "https://www.linkedin.com/in/hassan-eldeeb22/"
   
   - name : "Mohamed Adel"
     designation : "Programs"
     image : "/assets/images/team/Mohamed.png"
-    link: "https://www.linkedin.com/in/magedelaasar/"
+    link: "https://www.linkedin.com/in/mohamed-adel-3167a41a7/"
     
   - name : "Moataz Hassan"
     designation : "SE Education"
     image : "/assets/images/team/Moataz.png"
-    link: "https://www.linkedin.com/in/magedelaasar/"
+    link: "https://www.linkedin.com/in/moataz-hassan-50aab31a6/"
     
   - name : "Mahmoud Fouda"
     designation : "Finance"
     image : "/assets/images/team/Mahmoud.png"
-    link: "https://www.linkedin.com/in/magedelaasar/"
+    link: "https://www.linkedin.com/in/mahmoudfooda/"
+
+  - name : "Omar Hussein"
+    designation : "Communications & PR"
+    image : "/assets/images/team/Omar.png"
+    link: "https://www.linkedin.com/in/omar-hussein-84611a183/"
 
 ################## Events ###########################
 events:

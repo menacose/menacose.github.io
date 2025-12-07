@@ -2,8 +2,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.menacose.org/" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
 title: "MENACOSE -  MENA Council of Systems Engineering"
 email: "mena@incose.net"
-phone: "+1 858.541.1725"
-address: "7670 Opportunity Rd, Suite 220  San Diego, CA 92111 USA"
+phone: ""
+address: "Founded in 2025, INCOSE MENA (MENACOSE) aims at democratising the practices of Systems Engineering in the MENA region."
 author: maelaasar
 description: >- # this means to ignore newlines
   MENACOSE - MENA Council of Systems Engineering
@@ -29,21 +29,14 @@ cta:
 
 ################## Social site ###############
 social:
-  - name: facebook
-    icon: "ti-facebook"
-    link: "#"
-
-  - name: twitter
-    icon: "ti-twitter-alt"
-    link: "#"
-
   - name: linkedin
     icon: "ti-linkedin"
-    link: "#"
+    link: https://www.linkedin.com/company/incose-mena/
 
-  - name: pinterest
-    icon: "ti-pinterest"
-    link: "#"
+  - name: youtube
+    icon: "ti-youtube"
+    link: https://www.youtube.com/@MENACOSE
+    
 
 # Build settings
 permalink: "/:title"

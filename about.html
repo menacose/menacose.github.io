@@ -1,55 +1,123 @@
 ---
 layout: default
-header_image: "/assets/images/bg/about-bg.jpg"
+header_image: "assets/images/banner/mena.png"
 title: "INCOSE MENA"
-description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis."
+description: "Explore our vision, mission, strategy, and the value we bring to advancing systems engineering in the MENA region."
 ---
 
 {% include page_header.html %}
 
 <!-- About Start -->
-<section class="section about overflow-hidden">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<div class="about-img">
-					<img src="{{'/assets/images/about/about.jpg' | relative_url}}" alt="" class="img-fluid w-100"/>
-					<div class="video-play">
-						<div class="play-bg">
-							<a class="popup-youtube" href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i class="fa fa-play"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-7 offset-lg-1 mt-5 mt-md-0">
-				<span class="text-color h5 text-uppercase">INCOSE MENA (MENACOSE)</span>
-				<h3 class="mb-4 mt-3">We are a Chapter of INCOSE in the MENA Region</h3>
-				<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim
-					veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure. </p>
-				<p class="mb-5">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-					est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-				<a href="#" class="btn btn-primary">Contact Us</a>
-			</div>
-		</div>
-	</div>
+<!-- --- VISION / MISSION / STRATEGY & VALUE PROPOSITION Section --- -->
+<section id="vision-mission" style="padding: 60px 20px; background-color: #f9f9f9; color: #333;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h2 style="text-align: left; margin-bottom: 40px;">Vision & Mission</h2>
+    
+    <div style="margin-bottom: 40px;">
+      <h3>Our Vision</h3>
+      <p>To be the leading force advancing systems engineering excellence across the MENA region, fostering innovation, collaboration, and sustainable development in complex socio-technical systems that shape the future of the region and the world.</p>
+    </div>
+    
+    <div style="margin-bottom: 40px;">
+      <h3>Our Mission</h3>
+      <p>To elevate the practice and impact of systems engineering across the MENA region by building a strong community of professionals, enabling knowledge exchange, promoting best practices, and driving collaboration within and across sectors. Through outreach, education, and strategic partnerships, we aim to address regional challenges and contribute to the advancement of global systems engineering.</p>
+    </div>
+    
+    <div style="margin-bottom: 40px;">
+      <h3>Strategy &amp; Value Proposition</h3>
+      
+      <h4>Our Strategy</h4>
+      <ol>
+        <li><strong>Develop World-Class Systems Engineering Capacity in MENA</strong><br>
+            Deliver high-quality training programs, workshops, and certification opportunities to strengthen professional competencies. Establish academic partnerships, promote systems engineering curricula, and create mentorship programs to support the next generation of systems engineers.</li>
+        <li><strong>Position MENA as a Global Leader in Systems Engineering</strong><br>
+            Enhance the visibility and influence of the MENA region within the global systems engineering community. Participate in international working groups, publish regional thought leadership, and host events that attract global engagement.</li>
+        <li><strong>Enable Collaboration among Government, Industry, and Academia</strong><br>
+            Build bridges between key stakeholders through joint task forces, forums, and strategic initiatives. Facilitate the co-creation of solutions to regional challenges and promote ecosystem-wide alignment around systems engineering best practices.</li>
+        <li><strong>Accelerate Systems Engineering Adoption in Strategic Sectors</strong><br>
+            Promote the application of systems engineering principles in critical sectors, including aerospace & defence, automotive, energy (oil, gas, nuclear, and renewable), smart cities and infrastructure, transportation & mobility, healthcare & medical systems, and water & environmental systems. Support pilot projects, form sector-specific working groups, and develop tailored guidance documents.</li>
+        <li><strong>Promote Innovation, Sustainability, and Future-Ready Systems</strong><br>
+            Champion emerging technologies and sustainable systems thinking by launching innovation-driven working groups, hosting summits, and publishing regional trend reports. Encourage research and development in digital engineering, artificial intelligence, smart systems, and resilient infrastructure.</li>
+      </ol>
+      
+      <h4>Our Value Proposition</h4>
+      <ul>
+        <li><strong>Professional Development</strong>: Delivering high-impact workshops, seminars, and certification pathways to build and elevate systems engineering competencies across all career levels.</li>
+        <li><strong>Networking &amp; Community Engagement</strong>: Fostering meaningful connections among professionals, academics, and industry leaders through events, forums, and collaborative platforms across the region.</li>
+        <li><strong>Knowledge Exchange</strong>: Providing access to cutting-edge research, evolving methodologies, and global best practices to advance the understanding and application of systems engineering.</li>
+        <li><strong>Regional Collaboration</strong>: Driving initiatives and joint projects that address the MENA region’s unique challenges and opportunities, promoting localized innovation and sustainable solutions.</li>
+        <li><strong>Innovation &amp; Thought Leadership</strong>: Empowering working groups to explore emerging technologies, pioneer new approaches, and lead paradigm shifts that shape the future of systems engineering.</li>
+      </ul>
+    </div>
+  </div>
 </section>
+
 <!-- About End -->
 
 <!-- Service Start -->
 <section class="section service bg-secondary position-relative">
-	<img src="{{'/assets/images/bg/feature-bg.png' | relative_url}}" alt="" class="overlay-shape">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7">
-				<span class="h5 text-color text-uppercase">
-					services
-				</span>
-				<h3 class="mb-5 mt-2 text-white">We Provide in MENA Region</h3>
-			</div>
-		</div>
-		{% include services.html %}
-	</div>
+  <img src="{{'/assets/images/bg/feature-bg.png' | relative_url}}" alt="" class="overlay-shape">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <span class="h5 text-color text-uppercase">services</span>
+        <h3 class="mb-5 mt-2 text-white">We Shape the Future of Systems Engineering in the MENA Region by Providing the Following Services</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Services list -->
+      <div class="col-lg-4 mb-4">
+        <div class="service-item text-white">
+          <i class="ti-calendar mb-3" style="font-size:2rem;"></i>
+          <h5>Events</h5>
+          <p>Regular webinars, virtual meetups, regional events in MENA, global events as part of INCOSE international.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="service-item text-white">
+          <i class="ti-target mb-3" style="font-size:2rem;"></i>
+          <h5>Working Groups</h5>
+          <p>Offering a platform for professionals to actively participate in shaping the state-of-the-art systems engineering practices.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="service-item text-white">
+          <i class="ti-medall mb-3" style="font-size:2rem;"></i>
+          <h5>Certification</h5>
+          <p>Gain formal recognition through INCOSE's Systems Engineering Professional (SEP) certification program (ASEP, CSEP, or ESEP) to advance your career.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="service-item text-white">
+          <i class="ti-thought mb-3" style="font-size:2rem;"></i>
+          <h5>Networking</h5>
+          <p>Tap into INCOSE's regional as well as global network to connect with peers in industry, academia, and public sector.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="service-item text-white">
+          <i class="ti-cup mb-3" style="font-size:2rem;"></i>
+          <h5>Corporate Partnerships</h5>
+          <p>Make an impact that lasts! Let's collaborate to bring systems engineering practices into action in our MENA region.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="service-item text-white">
+          <i class="ti-ruler-pencil mb-3" style="font-size:2rem;"></i>
+          <h5>SE Education</h5>
+          <p>We advocate for the promotion of systems engineering by making it part of academic curriculum and encourage students pursuing career in systems engineering.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End services list -->
+
+  </div>
 </section>
 <!-- Service End -->
 
