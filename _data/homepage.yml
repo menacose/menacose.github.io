@@ -142,6 +142,11 @@ team:
 events:
   - title : "AI CoPIlot for Systems Engineering"
     date : "2025-11-16"
-    description : "Join us for our annual general meeting to discuss the year's achievements and future plans."
+    description : ""
     link : "/ai-copilot-for-systems-engineering.html"
+  
+  - title : "Sub-Chapter Framework Working Group (SCFWG"
+    date : "2026-02-15"
+    description : "Join us for our Sub-Chapter Framework WG to discuss how to empower sustainable local activities, strengthen regional collaboration, and ensure alignment with INCOSE and MENACOSE’s strategic direction."
+    link : "/Sub-Chapter-FrameworkWG.html"
 
