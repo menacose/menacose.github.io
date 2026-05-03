@@ -146,18 +146,15 @@ calendar_feed:
   timezone : "Europe/Berlin"
 
 events:
-  - title : "AI CoPIlot for Systems Engineering"
-    date : "2025-11-16"
-    description : ""
-    link : "/ai-copilot-for-systems-engineering.html"
-  
-  - title : "Sub-Chapter Framework Working Group (SCFWG)"
-    date : "2026-02-15"
-    description : "Join us for our Sub-Chapter Framework WG to discuss how to empower sustainable local activities, strengthen regional collaboration, and ensure alignment with INCOSE and MENACOSE’s strategic direction."
-    link : "/Sub-Chapter-FrameworkWG.html"
-
   - title : "[إنكوزي مينا] فريق ترجمة مرجع هندسة النظم إلى العربية | الدعوة الرسمية للجلسة القادمة"
     date : "2026-05-10T20:00:00"
     end_date : "2026-05-10T21:00:00"
-    location : "https://teams.microsoft.com/meet/228536324142888?p=H21VEKF5Tq27qVXF9s"
+    description : "Join us for \"[إنكوزي مينا] فريق ترجمة مرجع هندسة النظم إلى العربية | الدعوة الرسمية للجلسة القادمة\" on Sunday, 10 May 2026 at 20:00."
+    link : "/event.html"
 
+  - title : "TEST"
+    date : "2026-05-10T21:00:00"
+    end_date : "2026-05-10T22:00:00"
+    description : "Join us for \"TEST\" on Sunday, 10 May 2026 at 21:00."
+    location : "Microsoft Teams Meeting"
+    link : "/test.html"
