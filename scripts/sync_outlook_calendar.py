@@ -13,7 +13,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 HOMEPAGE_PATH = REPO_ROOT / "_data" / "homepage.yml"
-SYNCED_POSTS_DIR = REPO_ROOT / "_posts" / "synced"
+POSTS_DIR = REPO_ROOT / "_posts"
 DEFAULT_AUTHOR = os.environ.get("CALENDAR_POST_AUTHOR", "MENACOSE")
 
 
@@ -187,19 +187,35 @@ def build_post_front_matter(event: dict[str, str]) -> str:
     return "\n".join(front_matter)
 
 
+def is_outlook_synced_post(path: Path) -> bool:
+    try:
+        content = path.read_text(encoding="utf-8")
+    except OSError:
+        return False
+    return "sync_source: outlook" in content
+
+
 def write_synced_posts(events: list[dict[str, str]]) -> None:
-    SYNCED_POSTS_DIR.mkdir(parents=True, exist_ok=True)
     expected_files: set[Path] = set()
 
     for event in events:
         post_filename = f'{event["date"][:10]}-{event["slug"]}.md'
-        post_path = SYNCED_POSTS_DIR / post_filename
+        post_path = POSTS_DIR / post_filename
         expected_files.add(post_path)
         post_content = build_post_front_matter(event) + build_post_body(event)
         post_path.write_text(post_content, encoding="utf-8")
 
-    for existing_file in SYNCED_POSTS_DIR.glob("*.md"):
-        if existing_file not in expected_files:
+    legacy_synced_dir = POSTS_DIR / "synced"
+    if legacy_synced_dir.exists():
+        for existing_file in legacy_synced_dir.glob("*.md"):
+            existing_file.unlink()
+        try:
+            legacy_synced_dir.rmdir()
+        except OSError:
+            pass
+
+    for existing_file in POSTS_DIR.glob("*.md"):
+        if existing_file not in expected_files and is_outlook_synced_post(existing_file):
             existing_file.unlink()
 
 

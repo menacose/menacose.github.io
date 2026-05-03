@@ -52,7 +52,7 @@ After setup, the repo updates automatically:
 - You create or update the invitation in Outlook.
 - Outlook publishes the change in the `.ics` feed.
 - GitHub Actions fetches that feed automatically every 10 minutes at `07, 17, 27, 37, 47, 57` minutes past the hour in UTC.
-- The workflow rewrites the `events:` section in `_data/homepage.yml`, generates synced event pages in `_posts/synced`, commits the changes, and pushes them.
+- The workflow rewrites the `events:` section in `_data/homepage.yml`, generates synced event pages directly in `_posts`, commits the changes, and pushes them.
 - GitHub Pages rebuilds the live website from the updated repo.
 
 ### Important note
