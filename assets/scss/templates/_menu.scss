@@ -170,6 +170,15 @@
   color: $white;
 }
 
+.site-logo {
+  max-height: 64px;
+  width: auto;
+}
+
+.site-logo-footer {
+  max-height: 84px;
+}
+
 @include mobile {
   .navbar-collapse {
     text-align: center;
@@ -178,6 +187,10 @@
 
   #main-nav .navbar-nav .nav-link {
     padding: 0px;
+  }
+
+  .site-logo {
+    max-height: 52px;
   }
 }
 
@@ -193,6 +206,10 @@
 
   .navbar-toggler span {
     color: $white;
+  }
+
+  .site-logo {
+    max-height: 48px;
   }
 }
 
