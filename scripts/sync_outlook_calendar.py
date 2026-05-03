@@ -144,6 +144,14 @@ def format_display_datetime(raw_value: str) -> str:
     return parsed.strftime("%A, %d %B %Y at %H:%M")
 
 
+def publish_date_for_event(raw_value: str) -> str:
+    event_day = iso_date_only(raw_value)
+    today = dt.date.today()
+    if event_day > today:
+        return today.isoformat()
+    return event_day.isoformat()
+
+
 def safe_location(value: str) -> str:
     cleaned = normalize_text(strip_urls(value))
     return cleaned
@@ -174,11 +182,12 @@ def build_post_front_matter(event: dict[str, str]) -> str:
         "---",
         "layout: event",
         f'title: {yaml_quote(event["title"])}',
-        f'date: {yaml_quote(event["date"])}',
+        f'date: {yaml_quote(event["publish_date"])}',
+        f'event_date: {yaml_quote(event["date"])}',
         "tags: events",
         "categories: [events]",
         f'author: {yaml_quote(DEFAULT_AUTHOR)}',
-        "featured: false",
+        "featured: true",
         f'permalink: {yaml_quote(event["link"])}',
         "sync_source: outlook",
         "---",
@@ -247,6 +256,7 @@ def transform_events(raw_events: list[dict[str, str]]) -> list[dict[str, str]]:
             "title": normalize_text(raw_event["SUMMARY"]),
             "date": date_value,
         }
+        event["publish_date"] = publish_date_for_event(date_value)
         event["slug"] = slugify(event["title"])
         event["link"] = f'/{event["slug"]}.html'
 
