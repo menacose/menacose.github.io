@@ -146,15 +146,15 @@ calendar_feed:
   timezone : "Europe/Berlin"
 
 events:
+  - title : "TesT"
+    date : "2026-05-10T18:00:00"
+    end_date : "2026-05-10T19:00:00"
+    description : "Join us for \"TesT\" on Sunday, 10 May 2026 at 18:00."
+    location : "Microsoft Teams Meeting"
+    link : "/test.html"
+
   - title : "[إنكوزي مينا] فريق ترجمة مرجع هندسة النظم إلى العربية | الدعوة الرسمية للجلسة القادمة"
     date : "2026-05-10T20:00:00"
     end_date : "2026-05-10T21:00:00"
     description : "Join us for \"[إنكوزي مينا] فريق ترجمة مرجع هندسة النظم إلى العربية | الدعوة الرسمية للجلسة القادمة\" on Sunday, 10 May 2026 at 20:00."
     link : "/event.html"
-
-  - title : "TEST"
-    date : "2026-05-10T21:00:00"
-    end_date : "2026-05-10T22:00:00"
-    description : "Join us for \"TEST\" on Sunday, 10 May 2026 at 21:00."
-    location : "Microsoft Teams Meeting"
-    link : "/test.html"
