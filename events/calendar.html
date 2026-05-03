@@ -28,7 +28,6 @@ description: "Explore the INCOSE MENA Events Calendar to stay updated on our upc
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
   
-  // Get events from Jekyll data
   var events = [
     {% if site.data.homepage.events %}
       {% for event in site.data.homepage.events %}
@@ -37,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
           start: '{{ event.date }}',
           {% if event.end_date %}end: '{{ event.end_date }}',{% endif %}
           {% if event.link %}url: '{{ event.link }}',{% endif %}
+          {% if event.location %}location: '{{ event.location | escape }}',{% endif %}
           {% if event.description %}description: '{{ event.description | escape }}',{% endif %}
         },
       {% endfor %}
@@ -66,4 +66,3 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Call To action Start -->
 {% include call_to_action.html %}
 <!-- Call to action End -->
-

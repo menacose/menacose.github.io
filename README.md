@@ -34,6 +34,31 @@ Things you can customize in `_data/settings.yml` (no HTML/CSS):
 To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
 I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll's website.
 
+## Calendar Sync
+
+The website calendar at `/events/calendar` reads from `_data/homepage.yml` under `events`. That section is now meant to be updated automatically from Outlook by the GitHub Actions workflow in `.github/workflows/sync-calendar.yml`.
+
+### One-time setup
+
+1. In Outlook, publish the calendar you want the website to follow and copy its public `.ics` URL.
+2. In GitHub, open `menacose/menacose.github.io` and add a repository secret named `OUTLOOK_CALENDAR_ICS_URL`.
+3. Set that secret value to the published Outlook `.ics` URL.
+4. In GitHub Actions, run the `Sync Outlook Calendar` workflow once manually to verify the first import.
+
+### Day-to-day operation
+
+After setup, the repo updates automatically:
+
+- You create or update the invitation in Outlook.
+- Outlook publishes the change in the `.ics` feed.
+- GitHub Actions fetches that feed every 30 minutes.
+- The workflow rewrites the `events:` section in `_data/homepage.yml`, commits it, and pushes it.
+- GitHub Pages rebuilds the live website from the updated repo.
+
+### Important note
+
+After this is enabled, the `events:` list in `_data/homepage.yml` becomes workflow-managed. If you want an event to stay on the website, it should exist in the Outlook calendar that is being published and synced.
+
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the **Kross Theme**. Please Search [existing issues](https://github.com/themefisher/dizer-jekyll/issues). It’s possible someone has already reported the same problem.

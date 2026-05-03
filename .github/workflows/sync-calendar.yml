@@ -1,0 +1,41 @@
+name: Sync Outlook Calendar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-calendar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Pull Outlook calendar into Jekyll data
+        env:
+          OUTLOOK_CALENDAR_ICS_URL: ${{ secrets.OUTLOOK_CALENDAR_ICS_URL }}
+          CALENDAR_LOOKBACK_DAYS: "30"
+          CALENDAR_LOOKAHEAD_DAYS: "730"
+        run: python scripts/sync_outlook_calendar.py
+
+      - name: Commit synced calendar updates
+        run: |
+          if git diff --quiet -- _data/homepage.yml; then
+            echo "No calendar changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/homepage.yml
+          git commit -m "chore: sync Outlook calendar"
+          git push

@@ -5,7 +5,7 @@ date: 2025-01-18
 tags: events
 categories: [events]
 image: "/assets/images/blog/SCFWG_ExpertTalk_Maged_20260111_V03.png"
-author: "Maged Elaasar"
+author: "Omar Hussein"
 featured: true
 ---
 
@@ -30,10 +30,10 @@ We encourage all members interested in shaping the future of MENACOSE sub-chapte
 We look forward to your participation.
 
 ---
+<div dir="rtl" style="text-align: right;">
 
 ### الأعضاء الكرام في إنكوزي مينا،
 
-<div dir="rtl" style="text-align: right;">
 يسرّنا دعوتكم لحضور اللقاء الخبراء **(Expert Talk)** الذي يقدّمه د. ماجد الآعسر، رئيس إنكوزي مينا، حول الموضوع:
 
 ### "تصميم إطار موحّد للفروع (Sub-Chapter Framework) في إنكوزي مينا"
@@ -48,4 +48,5 @@ We look forward to your participation.
 - **الفئة المستهدفة:** أعضاء إنكوزي مينا فقط
 
 ندعو جميع الأعضاء المهتمين بالمساهمة في تشكيل مستقبل فروع إنكوزي مينا وتعزيز الحضور الإقليمي للمشاركة في هذا اللقاء المميز.
+
 </div>
