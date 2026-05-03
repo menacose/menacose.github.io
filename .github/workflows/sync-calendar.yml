@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Show trigger
+        run: echo "Triggered by ${{ github.event_name }}"
+
       - name: Pull Outlook calendar into Jekyll data
         env:
           OUTLOOK_CALENDAR_ICS_URL: ${{ secrets.OUTLOOK_CALENDAR_ICS_URL }}
