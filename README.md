@@ -51,13 +51,17 @@ After setup, the repo updates automatically:
 
 - You create or update the invitation in Outlook.
 - Outlook publishes the change in the `.ics` feed.
-- GitHub Actions fetches that feed every 30 minutes.
-- The workflow rewrites the `events:` section in `_data/homepage.yml`, commits it, and pushes it.
+- GitHub Actions fetches that feed automatically every 10 minutes at `07, 17, 27, 37, 47, 57` minutes past the hour in UTC.
+- The workflow rewrites the `events:` section in `_data/homepage.yml`, generates synced event pages in `_posts/synced`, commits the changes, and pushes them.
 - GitHub Pages rebuilds the live website from the updated repo.
 
 ### Important note
 
 After this is enabled, the `events:` list in `_data/homepage.yml` becomes workflow-managed. If you want an event to stay on the website, it should exist in the Outlook calendar that is being published and synced.
+
+By default, the sync script does not overwrite `events:` with an empty list. If the Outlook feed is empty, the workflow keeps the existing entries unchanged. To intentionally clear the website events from Outlook, set `CALENDAR_ALLOW_EMPTY_SYNC` to `true` in the workflow file.
+
+Generated event pages intentionally strip meeting URLs from the invitation body before writing the page content. Calendar entries link to the generated internal event page, not directly to the meeting link.
 
 ## Reporting Issues
 

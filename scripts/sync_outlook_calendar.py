@@ -13,6 +13,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 HOMEPAGE_PATH = REPO_ROOT / "_data" / "homepage.yml"
+SYNCED_POSTS_DIR = REPO_ROOT / "_posts" / "synced"
+DEFAULT_AUTHOR = os.environ.get("CALENDAR_POST_AUTHOR", "MENACOSE")
 
 
 def unfold_ics_lines(text: str) -> list[str]:
@@ -74,6 +76,42 @@ def normalize_text(value: str) -> str:
     return " ".join(cleaned.split())
 
 
+def decode_ics_text(value: str) -> str:
+    return (
+        value.replace("\\r\\n", "\n")
+        .replace("\\n", "\n")
+        .replace("\\,", ",")
+        .replace("\\;", ";")
+        .strip()
+    )
+
+
+def strip_urls(value: str) -> str:
+    return re.sub(r"https?://\S+|www\.\S+", "", value).strip()
+
+
+def clean_multiline_text(value: str) -> str:
+    decoded = decode_ics_text(value)
+    without_urls = strip_urls(decoded)
+    lines = [" ".join(line.split()) for line in without_urls.splitlines()]
+    lines = [line for line in lines if line]
+    return "\n\n".join(lines)
+
+
+def summarize_text(value: str, max_length: int = 220) -> str:
+    summary = normalize_text(strip_urls(value))
+    if len(summary) <= max_length:
+        return summary
+    shortened = summary[: max_length - 3].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return shortened + "..."
+
+
+def slugify(value: str) -> str:
+    ascii_value = value.encode("ascii", "ignore").decode("ascii").lower()
+    slug = re.sub(r"[^a-z0-9]+", "-", ascii_value).strip("-")
+    return slug or "event"
+
+
 def parse_ics_datetime(raw_value: str, value_type: str | None) -> tuple[str, bool]:
     if value_type == "DATE":
         parsed = dt.datetime.strptime(raw_value, "%Y%m%d").date()
@@ -93,6 +131,76 @@ def event_sort_key(event: dict[str, str]) -> tuple[str, str]:
 
 def iso_date_only(raw_value: str) -> dt.date:
     return dt.date.fromisoformat(raw_value[:10])
+
+
+def format_display_datetime(raw_value: str) -> str:
+    if len(raw_value) == 10:
+        return dt.date.fromisoformat(raw_value).strftime("%A, %d %B %Y")
+
+    normalized = raw_value.replace("Z", "+00:00")
+    parsed = dt.datetime.fromisoformat(normalized)
+    if parsed.tzinfo is not None:
+        return parsed.strftime("%A, %d %B %Y at %H:%M UTC")
+    return parsed.strftime("%A, %d %B %Y at %H:%M")
+
+
+def safe_location(value: str) -> str:
+    cleaned = normalize_text(strip_urls(value))
+    return cleaned
+
+
+def build_post_body(event: dict[str, str]) -> str:
+    lines: list[str] = []
+
+    description = event.get("page_description", "").strip()
+    if description:
+        lines.append("### Description")
+        lines.append(description)
+        lines.append("")
+
+    lines.append("### Event Details")
+    lines.append(f'- **Date:** {format_display_datetime(event["date"])}')
+    if event.get("end_date"):
+        lines.append(f'- **Ends:** {format_display_datetime(event["end_date"])}')
+    if event.get("location"):
+        lines.append(f'- **Location:** {event["location"]}')
+    lines.append("")
+    lines.append("This page was generated automatically from the Outlook calendar invitation.")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def build_post_front_matter(event: dict[str, str]) -> str:
+    front_matter = [
+        "---",
+        "layout: event",
+        f'title: {yaml_quote(event["title"])}',
+        f'date: {yaml_quote(event["date"])}',
+        "tags: events",
+        "categories: [events]",
+        f'author: {yaml_quote(DEFAULT_AUTHOR)}',
+        "featured: false",
+        f'permalink: {yaml_quote(event["link"])}',
+        "sync_source: outlook",
+        "---",
+        "",
+    ]
+    return "\n".join(front_matter)
+
+
+def write_synced_posts(events: list[dict[str, str]]) -> None:
+    SYNCED_POSTS_DIR.mkdir(parents=True, exist_ok=True)
+    expected_files: set[Path] = set()
+
+    for event in events:
+        post_filename = f'{event["date"][:10]}-{event["slug"]}.md'
+        post_path = SYNCED_POSTS_DIR / post_filename
+        expected_files.add(post_path)
+        post_content = build_post_front_matter(event) + build_post_body(event)
+        post_path.write_text(post_content, encoding="utf-8")
+
+    for existing_file in SYNCED_POSTS_DIR.glob("*.md"):
+        if existing_file not in expected_files:
+            existing_file.unlink()
 
 
 def transform_events(raw_events: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -123,6 +231,8 @@ def transform_events(raw_events: list[dict[str, str]]) -> list[dict[str, str]]:
             "title": normalize_text(raw_event["SUMMARY"]),
             "date": date_value,
         }
+        event["slug"] = slugify(event["title"])
+        event["link"] = f'/{event["slug"]}.html'
 
         if "DTEND" in raw_event:
             end_value, _ = parse_ics_datetime(raw_event["DTEND"], raw_event.get("DTEND_VALUE"))
@@ -130,11 +240,18 @@ def transform_events(raw_events: list[dict[str, str]]) -> list[dict[str, str]]:
                 event["end_date"] = end_value
 
         if raw_event.get("DESCRIPTION"):
-            event["description"] = normalize_text(raw_event["DESCRIPTION"])
+            event["description"] = summarize_text(raw_event["DESCRIPTION"])
+            event["page_description"] = clean_multiline_text(raw_event["DESCRIPTION"])
         if raw_event.get("LOCATION"):
-            event["location"] = normalize_text(raw_event["LOCATION"])
-        if raw_event.get("URL"):
-            event["link"] = raw_event["URL"].strip()
+            location = safe_location(raw_event["LOCATION"])
+            if location:
+                event["location"] = location
+        if not event.get("description"):
+            event["description"] = (
+                f'Join us for "{event["title"]}" on {format_display_datetime(event["date"])}.'
+            )
+        if not event.get("page_description"):
+            event["page_description"] = event["description"]
 
         dedupe_key = (event["title"], event["date"])
         if dedupe_key in seen:
@@ -194,9 +311,19 @@ def main() -> int:
 
     ics_text = fetch_ics(ics_url)
     events = transform_events(parse_ics_events(ics_text))
+    allow_empty_sync = os.environ.get("CALENDAR_ALLOW_EMPTY_SYNC", "false").lower() == "true"
+
+    if not events and not allow_empty_sync:
+        print(
+            "No calendar events were found in the Outlook feed. "
+            "Keeping the existing homepage events unchanged.",
+        )
+        return 0
+
     homepage_text = HOMEPAGE_PATH.read_text(encoding="utf-8")
     updated_homepage = replace_events_section(homepage_text, dump_events_block(events))
     HOMEPAGE_PATH.write_text(updated_homepage, encoding="utf-8")
+    write_synced_posts(events)
     print(f"Synced {len(events)} event(s) into {HOMEPAGE_PATH}")
     return 0
 
