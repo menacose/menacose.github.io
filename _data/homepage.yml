@@ -146,15 +146,9 @@ calendar_feed:
   timezone : "Europe/Berlin"
 
 events:
-  - title : "TesT"
-    date : "2026-05-10T18:00:00"
-    end_date : "2026-05-10T19:00:00"
-    description : "Join us for \"TesT\" on Sunday, 10 May 2026 at 18:00."
-    location : "Microsoft Teams Meeting"
-    link : "/test.html"
-
-  - title : "[إنكوزي مينا] فريق ترجمة مرجع هندسة النظم إلى العربية | الدعوة الرسمية للجلسة القادمة"
-    date : "2026-05-10T20:00:00"
-    end_date : "2026-05-10T21:00:00"
-    description : "Join us for \"[إنكوزي مينا] فريق ترجمة مرجع هندسة النظم إلى العربية | الدعوة الرسمية للجلسة القادمة\" on Sunday, 10 May 2026 at 20:00."
-    link : "/event.html"
+  - title : "Test Shared Mailbox"
+    date : "2026-05-08T20:00:00"
+    end_date : "2026-05-08T21:00:00"
+    description : "الأعضاء الكرام في إنكوزي مينا، يسرّنا في إنكوزي مينا دعوتكم لحضور الجلسة القادمة من فريق عمل ترجمة مرجع إنكوزي لهندسة النظم (INCOSE Systems Engineering Handbook) إلى اللغة العربية، وذلك استكمالًا للانطلاقة الناجحة..."
+    location : "Microsoft Teams Meeting;"
+    link : "/test-shared-mailbox.html"
