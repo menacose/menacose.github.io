@@ -20,11 +20,13 @@ layout: default_2
 							<div class="row align-items-center my-5">
 								{% if page.tags %}
 								<div class="col-lg-6">
-									<div class="list-inline post-tags">
+										<div class="list-inline post-tags">
 										<div class="list-inline-item">
 											<h5>Tags:</h5>
 										</div>
-										{{page | tags | capitalize | replace: " "," "}}
+										{% for tag in page.tags %}
+										<a class="list-inline-item" href="{{ '/tag/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a>
+										{% endfor %}
 									</div>
 								</div>
 								{% endif %}
